@@ -2,12 +2,12 @@
 import random
 from tkinter import messagebox, Tk, Label, Button
 
-frases = ["sim", "não", "talvez"]
+frases = ["  sim  ", "  não  ", "talvez"]
 
 def responder():
     resposta_label = Label(text=frases[random.randrange(3)])
     resposta_label.grid(row=2, column=1, columnspan=2)
-
+    botao_sorteio["text"] ="próxima resposta"
 
 janela = Tk()
 janela.title("Gerador de Frases")
