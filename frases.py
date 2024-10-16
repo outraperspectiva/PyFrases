@@ -2,7 +2,7 @@
 import random
 from tkinter import messagebox, Tk, Label, Button
 
-frases = ["  sim  ", "  não  ", "talvez"]
+frases = ["  já é  ", "  não  ", "talvez"]
 
 def responder():
     resposta_label = Label(text=frases[random.randrange(3)])
